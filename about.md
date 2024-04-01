@@ -4,26 +4,16 @@ title: About
 ---
 
 <p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
+  Welcome to the engineers-oriented blog about cryptography and blockchain industry.
 </p>
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+I'm a blockchain developer from
+Ukraine with huge experience in decentralized and high-load systems. My portfolio consist of huge experience working
+with high-load systems e.g. banking and decentralized accounting systems. Over the past few years I've been working with
+decentralized technologies starting from developing backend architecture to writing smart contracts and core systems.
 
-There are currently two themes built on Poole:
+- Go, Rust, Java+Spring
+- Smart-contracts, decentralized systems
+- Solana, Tendermint, Ethereum, Near, Stellar
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
-
-Learn more and contribute on [GitHub](https://github.com/poole).
-
-## Setup
-
-Some fun facts about the setup of this project include:
-
-* Built for [Jekyll](https://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Atom](https://atom.io)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
-
-Thanks for reading!
+You can explore my GitHub by [link](github.com/olegfomenko).
