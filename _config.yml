@@ -3,7 +3,7 @@ title:               'Oleg Fomenko'
 tagline:             'Blog by Oleg Fomenko'
 description:         'Blog by Oleg Fomenko about cryptography, programming and blockchain'
 url:                 'https://olegfomenko.github.io/blog/'
-baseurl:             'https://olegfomenko.github.io/blog'
+baseurl:             ''
 paginate:            5
 permalink:           pretty
 
