@@ -1,6 +1,6 @@
 # Setup
-title:               'Oleg Fomenko'
-tagline:             'Blog by Oleg Fomenko'
+title:               'Blog'
+tagline:             'by Oleg Fomenko'
 description:         'Blog by Oleg Fomenko about cryptography, programming and blockchain'
 url:                 'https://olegfomenko.github.io/blog/'
 baseurl:             ''
