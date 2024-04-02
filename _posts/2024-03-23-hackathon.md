@@ -9,7 +9,7 @@ two flows how to anonymize transactions in blockchain. The first one explains th
 via [Pedersen commitment](https://link.springer.com/content/pdf/10.1007/3-540-46766-1_9.pdf) while the second introduces
 the untraceable coin transferring using stealth addresses.
 
-On the recent hackathon in Distributed Lab my team (Oleg Fomenko, Mykhailo Sokolov, Serhii Pomohaiev) introduced the way
+On the recent hackathon in Distributed Lab my team (Oleg Fomenko, Mykhailo Sokolov, Serhii Pomohaiev and Oleksandra Ryzhova) introduced the way
 how to combine this two approaches to make transactions hidden and untraceable but still verifiable.
 
 Briefly, it works in the following way: imagine we have all assets owned by users stored in a
