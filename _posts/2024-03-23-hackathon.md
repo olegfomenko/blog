@@ -31,4 +31,4 @@ One of the most important feature is that presented approach also gives us a non
 can generate aggregated signature and range proof by herself unlike default "confidential assets" protocol.
 
 This solution was implemented in Golang Cosmos module as a proof of concept and can be explored in
-this [repository](https://github.com/olegfomenko/rarimo-core/tree/feature/hackathon-condidential-transfers-fixed).
+this [repository](https://github.com/olegfomenko/rarimo-core/tree/feature/hackathon-condidential-transfers-fixed) (`cbank` module).
