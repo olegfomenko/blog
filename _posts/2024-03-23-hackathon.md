@@ -27,5 +27,8 @@ from `<C_1, A_2>` to `<C_2, PK_B>`, attaching `sig(a_2)`, `sig(a_1 - k_1)` and r
 knows all openings for destination commitment `C_2` but can't spend it because of unknown `PK_B` secret. On the other
 side, Bob knows all openings for both `C_2` and `PK_B` and after transaction execution can use received tokens.
 
+One of the most important feature is that presented approach also gives us a non-interactivity in communication: Alice
+can generate aggregated signature and range proof by herself unlike default "confidential assets" protocol.
+
 This solution was implemented in Golang Cosmos module as a proof of concept and can be explored in
 this [repository](https://github.com/olegfomenko/rarimo-core/tree/feature/hackathon-condidential-transfers-fixed).
