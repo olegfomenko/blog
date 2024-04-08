@@ -22,7 +22,7 @@ in production projects.It was unexpected to find errors in the original document
 unusable in its current form. Consequently, we have developed a corrected version of the Bulletproofs++ protocol and are
 currently in the process of drafting an article to showcase our revisions.
 
-In conclusion, our solution has `2G` points advantage over existing Bulletproofs and Bulletproofs+ protocols on proving
+In conclusion, our solution has $$ 2G $$ points advantage over existing Bulletproofs and Bulletproofs+ protocols on proving
 of one 64-bit value and this advantage will increase for more values per proof.
 
 | Protocol | G  | F |
