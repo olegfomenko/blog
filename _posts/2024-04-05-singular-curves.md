@@ -13,8 +13,7 @@ Singular curves is the curves where discriminant is equal to zero, so $$ 4a^3 + 
 In such cases, this curve can be represented in two forms (after variable replacement):
 
 1. $$ y^2 = x^3 $$ where using mapping $$ (x, y) \rightarrow \frac{x}{y} $$ it gives an isomorphism to additive group (
-   with
-   same order $$p$$) where discrete logarithm is trivial.
+   with same order $$p$$) where discrete logarithm is trivial.
 
 2. $$ y^2 = x^2(x + c) $$ where using mapping $$ (x, y) \rightarrow \frac{y + xc}{y - xc} $$ it gives an isomorphism to
    multiplicative group (with order $$p^2$$) where discrete logarithm problem is easy to solve for default elliptic key
