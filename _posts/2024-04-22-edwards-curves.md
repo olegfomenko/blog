@@ -48,11 +48,11 @@ So, later, using the Ed25519 curve, the EdDSA signature protocol has been presen
 
 Alice's flow:
 
-- Calculate $$a = Hash(Hash(k), m)$$, $$ch = Hash(aG, K, m)$$ and $$r = a + ch*k$$.
+- Calculate $$a = Hash(Hash(k), m)$$, $$ch = Hash(aG, K, m)$$ and $$r = a + ch\cdot k$$.
 - Send signature $$(aG, r)$$.
 
 Bob's flow:
 
 - Calculate $$ch = Hash(aG, K, m)$$.
-- Check that $$2^c*rG = 2^c*aG + 2^c ch*K$$. The $$2^c$$ cofactor is used to increase the security of the equation: it
+- Check that $$2^c\cdot rG = 2^c\cdot aG + 2^c ch\cdot K$$. The $$2^c$$ cofactor is used to increase the security of the equation: it
   ensures that all points are in the lager prime curve subgroup.
