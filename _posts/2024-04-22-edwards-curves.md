@@ -43,7 +43,7 @@ Bob's flow
 - Calculate challenge $$c = Hash(A)$$.
 - Check that $$rG = A + cK$$.
 
-Obviously, that using such algorithm we can add the message to the challenge generation and get the signature algorithm.
+Obviously, using such algorithm we can add the message to the challenge generation and get the signature algorithm.
 So, later, using the Ed25519 curve, the EdDSA signature protocol has been presented:
 
 Alice's flow:
