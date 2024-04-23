@@ -462,7 +462,3 @@ a.pagination-item:hover {
     border-bottom-right-radius: 4px;
   }
 }
-
-.MathJax {
-  font-family: Consolas, monaco, monospace;
-}
