@@ -17,7 +17,7 @@ message and private key.
 
 Let me show you how EdDSA protocol is related to the classical Schnorr authentication protocol.
 
-The Schnorr authentication protocol has the following form:
+The Schnorr authentication protocol was presented in 1991 in the following form:
 
 - Alice owns a secret value $$k$$ and shares the public key $$K = kG$$, where $$G$$ is the group generator. Alice's goal
   is to prove to the Bob the knowledge of $$k$$ that corresponds to the provided public key $$K$$ without revealing any
