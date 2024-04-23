@@ -17,7 +17,7 @@ Then, there are several methods to deal with the square root in
 $$F_q$$. [One of them](https://ed25519.cr.yp.to/ed25519-20110705.pdf) is to use the feature that $$q =
 2^{255} - 19 \equiv 5 (mod 8)$$. In the $$F_q$$ multiplicative group we have $$q - 1$$ elements (then for every $$x \in F_q: x^q = x$$), so for every square $$\alpha =
 \beta^2$$ we have $$\alpha^4 = \beta^8 \rightarrow \alpha^{p+3} = \beta^8 \rightarrow \alpha^\frac{p+3}{8} = \beta$$.
-From the equation $$\alpha^4 = \beta^8$$ we can observe that there can be two possible solutions $$+-\alpha = \beta^2$$.
+From the equation $$\alpha^4 = \beta^8$$ we can observe that there can be two possible solutions $$\pm\alpha = \beta^2$$.
 In the case when calculated $$\beta$$ satisfies $$\beta^2 = -\alpha$$ we should multiply it on $$\sqrt{-1}$$.
 
 For the $$\sqrt{-1}$$ we can follow the same transformations: $$x^2 = -1 \rightarrow x^4 = 1 \rightarrow x^4 = 2^{q-1}
