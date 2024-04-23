@@ -5,7 +5,8 @@ title: Edwards curves
 
 [Twisted Edwards curves](https://en.wikipedia.org/wiki/Twisted_Edwards_curve) has a form of $$ax^2 + y^2 = 1 +
 dx^2y^2$$ (for fields with characteristic not 2) where
-the [curve order](https://www.getmonero.org/library/Zero-to-Monero-2-0-0.pdf) can be represented as $$l \cdot 2^c$$, where
+the [curve order](https://www.getmonero.org/library/Zero-to-Monero-2-0-0.pdf) can be represented as $$l \cdot 2^c$$,
+where
 $$c$$ is a natural number, $$l$$ is a big prime number.
 
 For the classical EdDSA signature algorithm it uses the Ed25519 curve over the prime field $$F_{2^{255}-19}$$ with
@@ -17,7 +18,8 @@ message and private key.
 
 Let me show you how EdDSA protocol is related to the classical Schnorr authentication protocol.
 
-The Schnorr authentication protocol was presented in 1991 in the following form:
+The [Schnorr authentication protocol](https://en.wikipedia.org/wiki/Schnorr_signature) was presented in 1991 with the
+following form:
 
 - Alice owns a secret value $$k$$ and shares the public key $$K = kG$$, where $$G$$ is the group generator. Alice's goal
   is to prove to the Bob the knowledge of $$k$$ that corresponds to the provided public key $$K$$ without revealing any
@@ -54,5 +56,6 @@ Alice's flow:
 Bob's flow:
 
 - Calculate $$ch = Hash(aG, K, m)$$.
-- Check that $$2^c\cdot rG = 2^c\cdot aG + 2^c ch\cdot K$$. The $$2^c$$ cofactor is used to increase the security of the equation: it
+- Check that $$2^c\cdot rG = 2^c\cdot aG + 2^c ch\cdot K$$. The $$2^c$$ cofactor is used to increase the security of the
+  equation: it
   ensures that all points are in the lager prime curve subgroup.
