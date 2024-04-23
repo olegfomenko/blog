@@ -23,8 +23,8 @@ In the case when calculated $$\beta$$ satisfies $$\beta^2 = -\alpha$$ we should 
 For the $$\sqrt{-1}$$ we can follow the same transformations: $$x^2 = -1 \rightarrow x^4 = 1 \rightarrow x^4 = 2^{q-1}
 \rightarrow x = 2^{q-1}/4$$. The $$2$$ base element was selected as the most comfortable element for multiplication.
 
-So finally, for the equation $$x^2 = \frac{u}{v}$$ we can calculate $$\hat{x} = \sqrt{\frac{u}{v}}$$ and check that
-$$v\hat{x} = -u$$ and if so multiply the $$\hat{x}$$ on $$\sqrt{-1}$$.
+So finally, for the equation $$x^2 = \frac{u}{v}$$ we can calculate $$x' = \sqrt{u/v}$$ and check that
+$$v\cdot x' = -u$$ and if so multiply the $$x'$$ on $$\sqrt{-1}$$.
 
 
 
