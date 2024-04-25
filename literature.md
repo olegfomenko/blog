@@ -15,7 +15,7 @@ Papers:
 - [Key Aggregation for Schnorr Signatures: MuSig](https://blog.blockstream.com/en-musig-key-aggregation-schnorr-signatures/)
 - [Bulletproofs](https://eprint.iacr.org/2017/1066.pdf)
 - [Bulletproofs+](https://eprint.iacr.org/2020/735.pdf)
-- [Bulletproofs+](https://eprint.iacr.org/2022/510.pdf)
+- [Bulletproofs++](https://eprint.iacr.org/2022/510.pdf)
 - [Confidential assets](https://blockstream.com/bitcoin17-final41.pdf)
 - [Fast Multiparty Threshold ECDSA with Fast Trustless Setup](https://eprint.iacr.org/2019/114.pdf)
 
