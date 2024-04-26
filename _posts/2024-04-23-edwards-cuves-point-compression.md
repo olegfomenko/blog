@@ -3,7 +3,7 @@ layout: post
 title: Edwards curves point compression
 ---
 
-In addition to the post about Edwards curves, lats take a look on a useful feature that this curves allows. As we said
+In addition to the post about Edwards curves, lats take a look on a useful feature that this curves allows. As I said
 earlier, the Ed25519 for example, is defined over $$F_{2^{255}-19}$$ field, where every value requires 255 bit for the
 binary representation. So every point will take about 510 bit. Using the point compression algorithm, we can encode
 every point using only 256 bits by transferring only the $$y$$ coordinate.
