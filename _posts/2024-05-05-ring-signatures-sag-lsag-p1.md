@@ -21,7 +21,7 @@ Staring from the beginning let's describe the form of Schnorr signature protocol
 - Put the response $$r = a - kc$$.
 - The signature will be $$(c, r)$$.
 
-Then, verifier will calculate $$c' = Hash(m, r\cdot G + c\cdot K)$$ and check that $$c = c'$$.
+Then, verifier calculates $$c' = Hash(m, r\cdot G + c\cdot K)$$ and checks that $$c = c'$$.
 
 Moving to the ring signature protocol, lets define the ring as $$R = \{K_1, K_2, ..., K_d\}$$ where we know the private
 key $$k_x$$ of the key with secret position $$x$$. The, to generate the signature for the message $$m$$ where the signer
@@ -35,8 +35,8 @@ to the ring $$R$$ we will go through the following _Spontaneous Anonymous Group 
 - Put the response $$r_x = a - c_xk_x$$.
 - The signature will be $$(c_1, r_1, ... , r_d) and ring $$R$$.
 
-For the signature verification, for the every $$i = 1, 2, ..., d$$ (replacing $$d + 1 \rightarrow 1) calculate $$c_
-{i+1}' = H(R, m, r_i\cdot G + c_i\cdot K_i)$$ and check that $$c_1 = c_1'$$.
+To verify this ring signature, verifier for the every $$i = 1, 2, ..., d$$ (replacing $$d + 1 \rightarrow 1) calculates $$c_
+{i+1}' = H(R, m, r_i\cdot G + c_i\cdot K_i)$$ and checks that $$c_1 = c_1'$$.
 
 
 
