@@ -462,3 +462,7 @@ a.pagination-item:hover {
     border-bottom-right-radius: 4px;
   }
 }
+
+.MathJax .mi, .MathJax .mo {
+  color: green;
+}
