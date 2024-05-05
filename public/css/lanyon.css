@@ -557,7 +557,7 @@ a.pagination-item:hover {
   box-shadow: -.25rem 0 .5rem rgba(0,0,0,.1);
 }
 
-.MathJax{
-  color: green;
-  font-family: "Computer Modern Sans", sans-serif !important;
-}
+/*.MathJax{*/
+/*  color: green;*/
+/*  font-family: "Computer Modern Sans", sans-serif !important;*/
+/*}*/
