@@ -463,7 +463,7 @@ a.pagination-item:hover {
   }
 }
 
-.MathJax {
+.MathJax .mi, .MathJax .mo, .MathJax .mn{
   color: green;
   font-family: "Computer Modern Sans", sans-serif;
 }
