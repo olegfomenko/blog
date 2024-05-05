@@ -465,5 +465,5 @@ a.pagination-item:hover {
 
 .MathJax .mi, .MathJax .mo, .MathJax .mn{
   color: green;
-  font-family: "Computer Modern Sans", sans-serif;
+  font-family: "Computer Modern Sans", sans-serif !important;
 }
