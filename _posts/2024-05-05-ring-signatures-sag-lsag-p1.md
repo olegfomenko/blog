@@ -3,7 +3,7 @@ layout: post
 title: Schnorr Ring signatures - Part 1
 ---
 
-In previous posts I've taken a look on the Schnorr authentication protocol and its modifications. Continuing to open
+In previous posts I've taken a look on the Schnorr authentication protocol and its modifications. Continuing to discussing
 this theme let's overview the ring signature protocols that can be built using Shcnorr signature.
 
 Ring signature is a signature protocol where using some set of public keys (ring) $$R$$ some of them can sign the
