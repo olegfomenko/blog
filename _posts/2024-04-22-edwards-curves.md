@@ -33,14 +33,14 @@ Later, after presenting of the Fiat-Shamir heuristics, where for the challenges 
 input data such that verifier can also calculate, it becomes able to describe Schnorr authentication protocol in the
 non-interactive form:
 
-Alice's flow
+Alice's flow:
 
 - Generate random key $$a$$ and public $$A = aG$$.
 - Calculate challenge $$c = Hash(A)$$.
 - Calculates the response $$r = a + kc$$.
 - Send $$(A, r)$$ to the Bob.
 
-Bob's flow
+Bob's flow:
 
 - Calculate challenge $$c = Hash(A)$$.
 - Check that $$rG = A + cK$$.
