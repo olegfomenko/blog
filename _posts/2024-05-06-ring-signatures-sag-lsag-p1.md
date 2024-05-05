@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ring signatures using Schnorr authentication protocol - Part 1
+title: Schnorr Ring signatures - Part 1
 ---
 
 In previous posts I've taken a look on the Schnorr authentication protocol and its modifications. Continuing to open
