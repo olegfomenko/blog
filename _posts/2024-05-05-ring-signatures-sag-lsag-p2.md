@@ -12,7 +12,7 @@ _Back’s Linkable Spontaneous Anonymous Group_ (bLSAG) signature protocol as a 
 described in previous post SAG protocol introduces the ring signature with characterized by anonymity, linkability
 properties. Before going thought the protocol let's describe the special hash function $$H_p(x) \rightarrow \mathbb{G}$$
 the gives as the result a point in curve (DL problem can not be solved with overwhelming probability). So, for the given
-ring $R = \{K_1, K_2, ..., K_d\}$$ where we know the private key $$k_x$$ of the key with secret position $$x$$, bLSAG
+ring $$R = \{K_1, K_2, ..., K_d\}$$ where we know the private key $$k_x$$ of the key with secret position $$x$$, bLSAG
 protocol can be defined as follows:
 
 1. Calculate key image $$\hat{K} = k_x\cdot H_p(K_x)$$.
