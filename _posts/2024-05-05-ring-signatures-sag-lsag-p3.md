@@ -25,7 +25,7 @@ prime order of the big subgroup of our elliptic curve. Then, for the every $$i =
 m, [r_{i,1}\cdot G + c_i\cdot K_{i,1}], [r_{i,1}\cdot H_p(K_{i,1}) + c_i\cdot\hat{K}_1], ...)$$ and checks that $$c_1 =
 c_1'$$.
 
-Finally, if for the two different signatures $$S_1$$ and $$S_2$$ exists such indexes $$i,j$$ that $$\hat{K}_{S_1,i} =
+Finally, if for the two different signatures $$S_1$$ and $$S_2$$ exist such indexes $$i,j$$ that $$\hat{K}_{S_1,i} =
 \hat{K}_{S_2,j}$$ then these signatures are linked by signing from the same key.
 
 ![Ring signatures using Schnorr](../assets/img/RingsCheatsheet.png)
