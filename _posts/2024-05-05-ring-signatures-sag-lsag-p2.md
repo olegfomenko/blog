@@ -23,10 +23,10 @@ protocol can be defined as follows:
 5. Put the response $$r_x = a - c_xk_x$$.
 6. Define the signature $$(c_1, r_1, ... , r_d)$$, ring $$R$$ and key image $$\hat{K}$$.
 
-To verify such signature firstly verifier check that $$l\cdot\hat{K} = 0$$ where $$l$$ is the prime order of the big
-subgroup of our elliptic curve. That is required because malicious signer can select points from the subgroup of small
+To verify such signature firstly verifier checks that $$l\cdot\hat{K} = 0$$ where $$l$$ is the prime order of the big
+subgroup of our elliptic curve. This is required because malicious signer can select points from the subgroup of small
 cofactor $$h$$ that can affect linkability property. Then, for the every $$i = 1, 2, ..., d$$ (replacing $$d + 1
-\rightarrow 1$$) calculates $$c_
+\rightarrow 1$$) verifier calculates $$c_
 {i+1}' = H(m, [r_i\cdot G + c_i\cdot K_i], [r_i\cdot H_p(K_i) + c_i\cdot\hat{K}])$$ and checks that $$c_1 = c_1'$$.
 
 Finally, if the two different signatures (even with different rings) have been produced by the same signer then the both
