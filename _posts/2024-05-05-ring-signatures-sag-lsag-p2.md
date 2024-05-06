@@ -8,7 +8,7 @@ then given two different signatures (ring signatures) it becomes possible to che
 same signer. Linkability in a couple with _anonymity_ property gives verifier an opportunity to check this relation
 without revealing any information about signer.
 
-_Back’s Linkable Spontaneous Anonymous Group_ (bLSAG) signature protocol as a modification of the
+_Back’s Linkable Spontaneous Anonymous Group (bLSAG) signature_ protocol as a modification of the
 described in previous post SAG protocol introduces the ring signature with characterized by anonymity, linkability
 properties. Before going thought the protocol let's describe the special hash function $$H_p(x) \rightarrow \mathbb{G}$$
 the gives as the result a point in curve (DL problem can not be solved with overwhelming probability). So, for the given
