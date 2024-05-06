@@ -28,4 +28,4 @@ c_1'$$.
 Finally, if for the two different signatures $$S_1$$ and $$S_2$$ such indexes $$i,j$$ exist that $$\hat{K}_{S_1,i} =
 \hat{K}_{S_2,j}$$ then these signatures are linked by signing from the same key.
 
-![Ring signatures using Schnorr](../assets/img/RingsCheatsheet.png)
+![Ring signatures using Schnorr]({{ site.url }}/assets/img/RingsCheatsheet.png)
