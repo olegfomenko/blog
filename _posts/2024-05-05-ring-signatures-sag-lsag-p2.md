@@ -29,5 +29,5 @@ cofactor $$h$$ that can affect linkability property. Then, for the every $$i = 1
 \rightarrow 1$$) calculates $$c_
 {i+1}' = H(m, [r_i\cdot G + c_i\cdot K_i], [r_i\cdot H_p(K_i) + c_i\cdot\hat{K}])$$ and checks that $$c_1 = c_1'$$.
 
-Finally, if the two different signature even with different rings hsa been produced by the same signer then the both will
+Finally, if the two different signatures (even with different rings) have been produced by the same signer then the both will
 have the same key images $$\hat{K}$$.
