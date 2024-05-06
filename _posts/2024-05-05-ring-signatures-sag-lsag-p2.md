@@ -3,10 +3,10 @@ layout: post
 title: Schnorr Ring signatures - Part 2
 ---
 
-_Linkability_ is a property that describes relation between two signatures. If the signature protocol has such property
-then given two different signature (ring signatures) it becomes possible to check that them have been produced by the
-same signer. Linkability in a couple with _anonymity_ gets verifier an opportunity to check this without revealing any
-information about signer.
+_Linkability_ is a property that describes relation between two signatures. If the protocol has such property
+then given two different signatures (ring signatures) it becomes possible to check that them have been produced by the
+same signer. Linkability in a couple with _anonymity_ property gives verifier an opportunity to check this relation
+without revealing any information about signer.
 
 _Back’s Linkable Spontaneous Anonymous Group_ (bLSAG) signature protocol as a modification of the
 described in previous post SAG protocol introduces the ring signature with characterized by anonymity, linkability
@@ -29,5 +29,6 @@ cofactor $$h$$ that can affect linkability property. Then, for the every $$i = 1
 \rightarrow 1$$) calculates $$c_
 {i+1}' = H(m, [r_i\cdot G + c_i\cdot K_i], [r_i\cdot H_p(K_i) + c_i\cdot\hat{K}])$$ and checks that $$c_1 = c_1'$$.
 
-Finally, if the two different signatures (even with different rings) have been produced by the same signer then the both will
+Finally, if the two different signatures (even with different rings) have been produced by the same signer then the both
+will
 have the same key images $$\hat{K}$$.
