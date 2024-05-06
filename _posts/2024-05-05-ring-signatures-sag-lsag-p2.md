@@ -17,7 +17,7 @@ protocol can be defined as follows:
 
 1. Calculate key image $$\hat{K} = k_x\cdot H_p(K_x)$$.
 2. Generate random key $$a$$ and $$r_i$$ for all $$i$$ except of $$i = x$$.
-3. Put $$c_{x+1} = H(R, m, [a\cdot G], [a\cdot H_p(K_x)])$$.
+3. Put $$c_{x+1} = H(m, [a\cdot G], [a\cdot H_p(K_x)])$$.
 4. Then, for every $$i = x+1, x+2, ..., d, 1, 2, ..., x-1$$ (replacing $$d + 1 \rightarrow 1$$) calculate $$c_{i+1} = H(
    m, [r_i\cdot G + c_i\cdot K_i], [r_i\cdot H_p(K_i) + c_i\cdot\hat{K}])$$.
 5. Put the response $$r_x = a - c_xk_x$$.
