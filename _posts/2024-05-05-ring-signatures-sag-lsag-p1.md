@@ -28,12 +28,12 @@ key $$k_x$$ of the key with secret position $$x$$. The, to generate the signatur
 belongs
 to the ring $$R$$ we will go through the following _Spontaneous Anonymous Group (SAG) signature_ protocol:
 
-- Generate random key $$a$$ and $$r_i$$ for all $$i$$ except of $$i = x$$.
-- Put $$c_{x+1} = H(R, m, [a\cdot G])$$.
-- Then, for every $$i = x+1, x+2, ..., d, 1, 2, ..., x-1$$ (replacing $$d + 1 \rightarrow 1$$) calculate $$c_{i+1} = H(
+1. Generate random key $$a$$ and $$r_i$$ for all $$i$$ except of $$i = x$$.
+2. Put $$c_{x+1} = H(R, m, [a\cdot G])$$.
+3. Then, for every $$i = x+1, x+2, ..., d, 1, 2, ..., x-1$$ (replacing $$d + 1 \rightarrow 1$$) calculate $$c_{i+1} = H(
   R, m, [r_i\cdot G + c_i\cdot K_i])$$.
-- Put the response $$r_x = a - c_xk_x$$.
-- The signature will be $$(c_1, r_1, ... , r_d)$$ and the ring $$R$$.
+4. Put the response $$r_x = a - c_xk_x$$.
+5. The signature will be $$(c_1, r_1, ... , r_d)$$ and the ring $$R$$.
 
 To verify this ring signature, verifier for the every $$i = 1, 2, ..., d$$ (replacing $$d + 1 \rightarrow 1$$) calculates $$c_
 {i+1}' = H(R, m, [r_i\cdot G + c_i\cdot K_i])$$ and checks that $$c_1 = c_1'$$.
