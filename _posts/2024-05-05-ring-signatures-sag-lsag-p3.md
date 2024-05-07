@@ -28,4 +28,8 @@ c_1'$$.
 Finally, if for the two different signatures $$S_1$$ and $$S_2$$ such indexes $$i,j$$ exist that $$\hat{K}_{S_1,i} =
 \hat{K}_{S_2,j}$$ then these signatures are linked by signing from the same key.
 
+In addition, using signatures linking and one-time stealth addresses Monero blockchain solves a double-spending problem:
+if transaction contains the key image that already has been included into the previous block then in seems to be a
+double-spending.
+
 ![Ring signatures using Schnorr]({{ site.url }}/assets/img/RingsCheatsheet.png)
