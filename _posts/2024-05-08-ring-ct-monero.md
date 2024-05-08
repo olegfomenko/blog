@@ -48,7 +48,7 @@ Finally, the RingCT transaction (4 equals to type `RCTTypeBulletproof2`) consist
 | 4    	 | for each input $$i \in \{1...m\}$$: 	 | for each output $$j \in \{1...p\}$$:                            	                                  | public fee amount 	 | Tx public key $$rG$$, etc. 	 |
 | 	      | - Ring members                      	 | - One time address $$K^O_j$$                                    	                                  | 	                   | 	                            |
 | 	      | - MLSAG signature                   	 | - Output commitment $$C^b_j$$                                   	                                  | 	                   | 	                            |
-| 	      | - Key image                         	 | - Encoded amount (see docs for more info)                       	                                  | 	                   | 	                            |
+| 	      | - Key image                         	 | - Encrypted amount (see docs for more info)                       	                                | 	                   | 	                            |
 | 	      | - Pseudo output $$\hat{C}^a_i$$     	 | - Range proof that committed amount lies in $$[0..2^{64})$$ range (to prevent variable overflow) 	 | 	                   | 	                            |
 
 In conclusion, usage of stealth addresses in a couple with ring signatures and pseudo outputs allows user's to create an
