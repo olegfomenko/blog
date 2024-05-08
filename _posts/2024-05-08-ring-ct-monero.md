@@ -37,12 +37,12 @@ secrets for $$\pi$$ position: from public key $$K_{\pi,j}$$ and from zero-value 
 {\pi,j} = x_{\pi,j} - x'_{\pi,j} = z_j$$. Also, user attaches the key image for his key $$K_{\pi,j}$$. Because this key
 should be a one-time address we can consider that it can be used only once. So, if there is any included into the block
 transaction exist with same key image then we faced the try of double-spending of some output. Finally, the RingCT
-transaction consist of:
+transaction (4 equals to type `RCTTypeBulletproof2`) consist of:
 
-| type                	 | input                               	 | output                                                          	 | fee               	 | extra                      	 |
-|-----------------------|---------------------------------------|-------------------------------------------------------------------|---------------------|------------------------------|
-| RCTTypeBulletproof2 	 | for each input $$i \in \{1...m\}$$: 	 | for each output $$j \in \{1...m\}$$:                            	 | public fee amount 	 | Tx public key $$rG$$, etc. 	 |
-| 	                     | - Ring members                      	 | - One time address $$K^O_j$$                                    	 | 	                   | 	                            |
-| 	                     | - MLSAG signature                   	 | - Output commitment $$C^b_j$$                                   	 | 	                   | 	                            |
-| 	                     | - Key image                         	 | - Encoded amount (see docs fro more info)                       	 | 	                   | 	                            |
-| 	                     | - Pseudo output $$\hat{C}^a_i$$     	 | - Range proof that committed amount lies in $$[0..2^64)$$ range 	 | 	                   | 	                            |
+| type 	 | input                               	 | output                                                          	 | fee               	 | extra                      	 |
+|--------|---------------------------------------|-------------------------------------------------------------------|---------------------|------------------------------|
+| 4    	 | for each input $$i \in \{1...m\}$$: 	 | for each output $$j \in \{1...m\}$$:                            	 | public fee amount 	 | Tx public key $$rG$$, etc. 	 |
+| 	      | - Ring members                      	 | - One time address $$K^O_j$$                                    	 | 	                   | 	                            |
+| 	      | - MLSAG signature                   	 | - Output commitment $$C^b_j$$                                   	 | 	                   | 	                            |
+| 	      | - Key image                         	 | - Encoded amount (see docs fro more info)                       	 | 	                   | 	                            |
+| 	      | - Pseudo output $$\hat{C}^a_i$$     	 | - Range proof that committed amount lies in $$[0..2^64)$$ range 	 | 	                   | 	                            |
