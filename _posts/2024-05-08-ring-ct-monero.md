@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How RingCT from Monero works?
+title: How does Monero RingCT work?
 ---
 
 It wasn't a coincidence that we were talking about *SAG signatures earlier. MLSAG signatures became one of the bases for
@@ -49,3 +49,8 @@ Finally, the RingCT transaction (4 equals to type `RCTTypeBulletproof2`) consist
 | 	      | - MLSAG signature                   	 | - Output commitment $$C^b_j$$                                   	   | 	                   | 	                            |
 | 	      | - Key image                         	 | - Encoded amount (see docs fro more info)                       	   | 	                   | 	                            |
 | 	      | - Pseudo output $$\hat{C}^a_i$$     	 | - Range proof that committed amount lies in $$[0..2^{64})$$ range 	 | 	                   | 	                            |
+
+In conclusion, usage of stealth addresses in a couple with ring signatures and pseudo outputs allows user's to create an
+untraceable transactions with hidden amounts. In particular, stealth addresses helps to hide the connection between
+users when ring signatures hides the real output that will be transferred. Finally, pseudo outputs is used to achieve
+verification of transacted sum of coins without compromising the achieved anonymity.
