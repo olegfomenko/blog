@@ -10,14 +10,7 @@ generate signature with several signers while they are all still hidden in the r
 with secret position $$x$$ for corresponding public keys $$K_{x,j}$$ for $$j \in \{1,2,...m\}$$. The MLSAG protocol has
 a lot in common with bLSAG protocol:
 
-1. Calculate key image $$\hat{K}_j = k_{x,j}\cdot H_p(K_{x,j})$$ for $$j \in \{1,2,...m\}$$.
-2. Generate random key $$a_j$$ for $$j \in \{1,2,...m\}$$.
-3. For $$i \in \{1,2,...n\} \setminus x$$ and $$j \in \{1,2,...m\}$$ generate random $$r_{i,j}$$.
-4. Put $$c_{x+1} = H(m, [a_1\cdot G], [a_1\cdot H_p(K_{x,1})], [a_2\cdot G], [a_2\cdot H_p(K_{x,2})],...)$$.
-5. Then, for every $$i = x+1, x+2, ..., n, 1, 2, ..., x-1$$ (replacing $$n + 1 \rightarrow 1$$) calculate $$c_{i+1} = H(
-   m, [r_{i,1}\cdot G + c_i\cdot K_{i,1}], [r_{i,1}\cdot H_p(K_{i,1}) + c_i\cdot\hat{K}_1], ...)$$.
-6. Put the response $$r_{x,j} = a - c_xk_{x,j}$$ for $$j \in \{1,2,...m\}$$.
-7. Define the signature $$(c_1, r_{i,j})$$, ring $$R$$ and key images $$\hat{K}_j$$.
+![MLSAG signing]({{ site.url }}/assets/img/mlsag.png)
 
 To verify such signature firstly verifier checks $$\forall j \in \{1,2...m\}: l\cdot\hat{K}_j = 0$$ where $$l$$ is the
 prime order of the big subgroup of our elliptic curve. Then, for the every $$i = 1, 2, ..., n$$ (replacing $$n + 1
