@@ -49,5 +49,5 @@ Finally, the RingCT transaction (4 equals to type `RCTTypeBulletproof2`) consist
 
 In conclusion, usage of stealth addresses in a couple with ring signatures and pseudo outputs allows user's to create an
 untraceable transactions with hidden amounts. In particular, stealth addresses helps to hide the connection between
-users when ring signatures hides the real output that will be transferred. Finally, pseudo outputs is used to achieve
+users while ring signatures hides the real output that will be transferred. Finally, pseudo outputs is used to achieve
 verification of transacted sum of coins without compromising the achieved anonymity.
