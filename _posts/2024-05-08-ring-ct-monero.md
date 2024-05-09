@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How does Monero RingCT work?
+title: How Monero RingCT works?
 ---
 
 It wasn't a coincidence that we were talking about *SAG signatures earlier. MLSAG signatures became one of the bases for
