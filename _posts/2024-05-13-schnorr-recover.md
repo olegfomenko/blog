@@ -4,9 +4,10 @@ title: EdDSA signature challenge
 ---
 
 For the EdDSA signature protocol (that is based on Schnorr authentication scheme) it is required to understand why and
-how the challenge is generated. I've mentioned earlier that fo the challenge generation in the non-interactive protocol
-we are using the Fiat-Shamir heuristics. The basic idea is the for the challenge generation we can hash all input data
-and use its result. It is necessary to highlight that we have to include __all input data__ into the hash.
+how the challenge is generated. I've mentioned earlier that for the challenge generation in the non-interactive protocol
+we are using the Fiat-Shamir heuristics. The basic idea is to generate challenges using the hash of all input data. It
+is necessary to highlight that we have to include __all input data__ into the hash, otherwise malicious user can be able
+to manipulate information that was not included and fixed in hash.
 
 Let's take a look to the example of challenge generation in EdDSA: it uses the $$c = Hash(aG, K, m)$$ and $$r = a + c*
 k$$ to verify later that $$rG = aG + \hat{c}K$$. Using such an approach the signer can not manipulate signature $$(A,
