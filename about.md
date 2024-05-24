@@ -4,7 +4,7 @@ title: About author
 ---
 
 Hi there! It's good to see you on my blog! I launched it to share with you some of the thoughts, ideas and experiences
-I've had working as a blockchain developer. My main area of interest as well as passion are cryptography and blockchain
+I've had working as a blockchain developer. My main area of interest as well as passion is cryptography and blockchain
 development, which I combine while working at [Distributed Lab](https://distributedlab.com).
 
 Here are some of my biggest projects that I am proud to share:
