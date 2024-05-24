@@ -22,5 +22,7 @@ implementation of novel range proof protocol in discrete logarithm setting.
 
 If you have any questions or suggestions, please contact me:
 
-- 📧 oleg.fomenko2002@gmail.com
-- 🧑‍💻 t.me/of_dl
+[![Mail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](oleg.fomenko2002@gmail.com)
+[![X](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://x.com/oleg_dl)
+[![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/oleh-fomenko/)
+[![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](t.me/of_dl)
