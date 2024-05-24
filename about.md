@@ -4,15 +4,18 @@ title: About author
 ---
 
 Hi there! It's good to see you on my blog! I launched it to share with you some of the thoughts, ideas and experiences
-I've had working as a blockchain developer. My main area of interest as well as passion is cryptography and blockchain
+I've had working as a blockchain developer. My main area of interest as well as passion are cryptography and blockchain
 development, which I combine while working at [Distributed Lab](https://distributedlab.com).
 
 Here are some of my biggest projects that I am proud to share:
 
-* [Rarimo](github.com/rarimo) - main core maintainer (Cosmos SDK, ECDSA TSS, Go).
+* [Rarimo](github.com/rarimo) - core contributor and main architect (Cosmos SDK, ECDSA TSS, Go).
 
 * Bulletproofs++ [Rust](https://github.com/distributed-lab/bp-pp) & [Go](https://github.com/distributed-lab/bulletproofs) -
 implementation of novel range proof protocol in discrete logarithm setting.
+
+* [Bulletproofs++. Constructions and Examples]({{ site.url }}/assets/download/Bulletproofs++-Construction-and-Examples.pdf) - document introduces some clarification and
+  corrections to Bulletproofs++ original paper.
 
 * [Solana Program Library](https://github.com/distributed-lab/solana-program-library) - main maintainer of the
   Distributed Lab Solana program library.

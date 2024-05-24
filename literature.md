@@ -18,6 +18,7 @@ Papers:
 - [Bulletproofs++](https://eprint.iacr.org/2022/510.pdf)
 - [Confidential assets](https://blockstream.com/bitcoin17-final41.pdf)
 - [Fast Multiparty Threshold ECDSA with Fast Trustless Setup](https://eprint.iacr.org/2019/114.pdf)
+- [Bulletproofs++. Constructions and Examples]({{ site.url }}/assets/download/Bulletproofs++-Construction-and-Examples.pdf)
 
 Books:
 
