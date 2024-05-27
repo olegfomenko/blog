@@ -57,5 +57,4 @@ Bob's flow:
 
 - Calculate $$ch = Hash(aG, K, m)$$.
 - Check that $$2^c\cdot rG = 2^c\cdot aG + 2^c ch\cdot K$$. The $$2^c$$ cofactor is used to increase the security of the
-  equation: it
-  ensures that all points are in the lager prime curve subgroup.
+  equation: it ensures that all points are in the lager prime curve subgroup.

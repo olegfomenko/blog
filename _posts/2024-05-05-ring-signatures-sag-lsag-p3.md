@@ -3,16 +3,16 @@ layout: post
 title: Schnorr Ring signatures - Part 3
 ---
 
-Finally, finishing the posts about ring signatures based on Schnorr authentication protocol we are able to overview the
+Now, finishing the posts about ring signatures based on Schnorr authentication protocol we are able to overview the
 _Multilayer Linkable Spontaneous Anonymous Group (MLSAG) signature_ protocol. This protocol provides an opportunity to
 generate signature with several signers while they are all still hidden in the ring. So, given the ring $$R = \{K_
-{i,j}\}$$ for $$i \in \{1,2,...n\}$$ and $$j \in \{1,2,...m\}$$ where we know the private keys $$k_{x,j}$$ of the keys
-with secret position $$x$$ for corresponding public keys $$K_{x,j}$$ for $$j \in \{1,2,...m\}$$. The MLSAG protocol has
+{i,j}\}$$ for $$i \in \{1,2,...n\}$$ and $$j \in \{1,2,...m\}$$ where we know the private keys $$k_{x,j}$$ for
+corresponding public keys $$K_{x,j}$$ with secret position $$x$$ for $$j \in \{1,2,...m\}$$. Then, the MLSAG protocol has
 a lot in common with bLSAG protocol:
 
 ![MLSAG signing]({{ site.url }}/assets/img/mlsag.png)
 
-To verify such signature firstly verifier checks $$\forall j \in \{1,2...m\}: l\cdot\hat{K}_j = 0$$ where $$l$$ is the
+To verify such signature, verifier checks that $$\forall j \in \{1,2...m\}: l\cdot\hat{K}_j = 0$$ where $$l$$ is the
 prime order of the big subgroup of our elliptic curve. Then, for the every $$i = 1, 2, ..., n$$ (replacing $$n + 1
 \rightarrow 1$$) verifier calculates $$c_{i+1} = H(
 m, [r_{i,1}\cdot G + c_i\cdot K_{i,1}], [r_{i,1}\cdot H_p(K_{i,1}) + c_i\cdot\hat{K}_1], ...)$$ and checks that $$c_1 =
