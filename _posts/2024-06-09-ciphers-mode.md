@@ -4,14 +4,14 @@ title: Block cipher mode of operation
 ---
 
 Block cipher is an algorithm that performs encryption and decryption of the open text by blocks (for example of 128
-bit). It's obvious that to encode text that with different sizes we need a separate high-level module that will perform
-split and append operations on the text in a couple with some other transformations. Such algorithms are called _block
-cipher modes_.
+bit). It's obvious that to encode open text with different from block sizes we need a separate high-level module that
+will perform split and append operations on the text in a couple with some other transformations. Such transformations
+are called _block cipher modes_.
 
 In general, let's define the block cipher as follows:
 
-- __Encrypt__ $$Enc(m, k) = c$$ - function that encrypts text $$m$$ using key $$k$$ and outputs ciphertext $$c$$.
-- __Decrypt__ $$Dec(c, k) = m$$ - function that decrypts ciphertext $$c$$ using key $$k$$ and outputs text $$m$$.
+- __Encrypt__: $$Enc(m, k) = c$$ - function that encrypts text $$m$$ using key $$k$$ and outputs ciphertext $$c$$.
+- __Decrypt__: $$Dec(c, k) = m$$ - function that decrypts ciphertext $$c$$ using key $$k$$ and outputs text $$m$$.
 
 ## ECB (electronic cookbook) mode
 
@@ -20,7 +20,7 @@ The most obvious cipher mode is an ECB mode that performs encryption for every b
 $$c_i = Enc(m_i, k)$$
 
 This mode is considered to be the worst modes from all. If two parts of input text are equal (that appears really often
-for real texts) it produces same ciphertext that can be used by hackers to block your cypher.
+for real texts) it produces same ciphertext that can be used by hackers to broke our cypher.
 
 ## CBC (cipher block chaining) mode
 
@@ -33,7 +33,7 @@ $$c_i = Enc(m_i \oplus c_{i-1}, k)$$
 $$m_i = Dec(c_i, k) \oplus c_{i-1}$$
 
 For the initial block encrypting it uses special _initialization vector_ that have to be unique for every new
-encryption. If you use same initialization vectors for different encryptions it can cause same problems as in the ECB
+encryption. If we use same initialization vectors for different encryptions it can cause same problems as in the ECB
 mode.
 
 Let's overview several approaches to generate the initialization vector.
@@ -43,14 +43,14 @@ Let's overview several approaches to generate the initialization vector.
 - A random initialization vector can be really safe for most cases, but it requires access to a really good random
   number generator. Also, it adds one more cipher block to every encryption that increases the size of resulting
   ciphertext.
-- Usage of nonce values combines two previous methods. For nonce (number used only once) you can select for example a
-  message number and then generate initialization vector $$c_0$$ by separate encryption of this value. Then, you can add
-  this number to the resulting ciphertext in a raw format an on the decryption side it will be possible to generate your
+- Usage of nonce values combines two previous methods. For nonce (number used only once) we can select for example a
+  message number and then generate initialization vector $$c_0$$ by separate encryption of this value. Then, we can add
+  this number to the resulting ciphertext in a raw format an on the decryption side it will be possible to generate our
   initialization vector.
 
 ## OFB (output feedback) mode
 
-Using this mode we will not encrypt your text directly. Instead, we will use block cipher to generate the pseudo-random
+Using this mode we will not encrypt our text directly. Instead, we will use block cipher to generate the pseudo-random
 bytes stream and combine it with open text by xor operation (as in one-time-pad cipher). Such an approach is also
 referred to stream cipher.
 
@@ -64,16 +64,16 @@ the text to fill all block size - we can use as much as needed.
 
 One of the highest vulnerability of this mode is that usage of same initialization vectors cause more security risks
 than in all previous modes. For example for texts $$m, \hat{m}$$ and ciphertexts $$c, \hat{c}$$ generated with same
-initialization vectors: $$c \oplus \hat{c} = m \oplus k \oplus \hat{m} \oplus k = m \oplus \hat{m}$$. So, with the knowledge of
-one of
-open texts, hacker can easily recover the other text.
+initialization vectors we can calculate $$c \oplus \hat{c} = m \oplus k \oplus \hat{m} \oplus k = m \oplus \hat{m}$$.
+So, with the knowledge of one of the open texts, hacker can easily recover the other text.
 
 Also, if one of the $$k_i$$ appears twice, it will cause the whole chain to repeat. This problem is more likely to occur
-after a large number of encryptions, so it is obviously necessary to limit the maximum number of encryptions per key.
+after a large number of encryptions (see the collisions section below), so it is obviously necessary to limit the
+maximum number of encryptions per key.
 
 ## CTR (counter) mode
 
-Counter mode can be determined as a modification of the OFB mode because it utilizes the same approaches.
+CTR mode can be determined as a modification of the OFB mode because it utilizes the same approaches.
 
 $$k_i = Enc(nonce | i, k)$$
 
@@ -93,6 +93,7 @@ messages ber one key as well as maximum size of one message $$2^{64}$$ bit.
 - __Nonce__: In most implementation CBC requires nonce as well as CTR.
 
 ## Collisions
+
 We've made a lot of focus on the probability that two ciphertexts for same keys appears to be same. In all cases it easy
 to check that such match gives more information to hacker about the open text. But what is the resulting probability of
 such collision? Imagine we've encrypted $$M$$ blocks of text then we can select about $$M(M - 1)/2$$ pairs from them.
