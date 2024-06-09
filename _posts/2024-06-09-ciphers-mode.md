@@ -98,5 +98,5 @@ to check that such match gives more information to hacker about the open text. B
 such collision? Imagine we've encrypted $$M$$ blocks of text then we can select about $$M(M - 1)/2$$ pairs from them.
 For the block size $$n$$ the probability of two blocks to be equal is $$2^{-n}$$, so the entire probability to receive
 same ciphertexts will be
-$$\frac{M(M-1)}{2^{n+1}}$$. This value reaches one if $$M ~ 2^{n/2}$$. So, for the 128-bit cipher, we will receive
+$$\frac{M(M-1)}{2^{n+1}}$$. This value reaches one if $$M \simeq 2^{n/2}$$. So, for the 128-bit cipher, we will receive
 collision with high probability after $$2^{64}$$ encryptions. This observation ca be referred to the birthday paradox.
