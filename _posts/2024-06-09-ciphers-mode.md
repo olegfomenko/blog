@@ -28,9 +28,9 @@ One of the most popular modes is a CBC mode that performs xor operation for ever
 ciphertext. This mode lacks the disadvantage of the ECB mode and outputs the different cipher texts even for same open
 texts.
 
-$$c_i = Enc(m_i \xor c_{i-1}, k)$$
+$$c_i = Enc(m_i \oplus c_{i-1}, k)$$
 
-$$m_i = Dec(c_i. k) \xor c_{i-1}$$
+$$m_i = Dec(c_i. k) \oplus c_{i-1}$$
 
 For the initial block encrypting it uses special _initialization vector_ that have to be unique for every new
 encryption. If you use same initialization vectors for different encryptions it can cause same problems as in the ECB
@@ -56,7 +56,7 @@ referred to stream cipher.
 
 $$k_i = Enc(k_{i-1}, k)$$
 
-$$c_i = m_i \xor k_i$$
+$$c_i = m_i \oplus k_i$$
 
 It's easy to observe that such an approach also requires the initialization vector as in CBC mode. One of the advantages
 of this algorithm is that encryption and decryption methods are the same. Also, it does not require the appending to
@@ -64,7 +64,7 @@ the text to fill all block size - we can use as much as needed.
 
 One of the highest vulnerability of this mode is that usage of same initialization vectors cause more security risks
 than in all previous modes. For example for texts $$m, \hat{m}$$ and ciphertexts $$c, \hat{c}$$ generated with same
-initialization vectors: $$c \xor \hat{c} = m \xor k \xor \hat{m} \xor k = m \xor \hat{m}$$. So, with the knowledge of
+initialization vectors: $$c \oplus \hat{c} = m \oplus k \oplus \hat{m} \oplus k = m \oplus \hat{m}$$. So, with the knowledge of
 one of
 open texts, hacker can easily recover the other text.
 
@@ -77,7 +77,7 @@ Counter mode can be determined as a modification of the OFB mode because it util
 
 $$k_i = Enc(nonce | i, k)$$
 
-$$c_i = m_i \xor k_i$$
+$$c_i = m_i \oplus k_i$$
 
 This mode requires $$nonce | i$$ be the same size as block. Then, for example, for 128-bit block we can use 48-bit for
 message number, 16 bit for any nonce data and 64 bit for counter $$i$$. Then, we are able to encrypt maximum $$2^{48}$$
