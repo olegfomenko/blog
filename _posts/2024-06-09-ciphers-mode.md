@@ -30,7 +30,7 @@ texts.
 
 $$c_i = Enc(m_i \oplus c_{i-1}, k)$$
 
-$$m_i = Dec(c_i. k) \oplus c_{i-1}$$
+$$m_i = Dec(c_i, k) \oplus c_{i-1}$$
 
 For the initial block encrypting it uses special _initialization vector_ that have to be unique for every new
 encryption. If you use same initialization vectors for different encryptions it can cause same problems as in the ECB
