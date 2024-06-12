@@ -3,15 +3,15 @@ layout: post
 title: Block cipher mode of operation
 ---
 
-Block cipher is an algorithm that performs encryption and decryption of the open text by blocks (for example of 128
-bit). It's obvious that to encode open text with different from block sizes we need a separate high-level module that
-will perform split and append operations on the text in a couple with some other transformations. Such transformations
+Block cipher is an algorithm that performs encryption and decryption of the plaintext by blocks (for example of 128
+bit). It's obvious that to encode plaintext with different from block sizes we need a separate high-level module that
+will perform split and append operations on the plaintext in a couple with some other transformations. Such transformations
 are called _block cipher modes_.
 
 In general, let's define the block cipher as follows:
 
-- __Encrypt__: $$Enc(m, k) = c$$ - function that encrypts text $$m$$ using key $$k$$ and outputs ciphertext $$c$$.
-- __Decrypt__: $$Dec(c, k) = m$$ - function that decrypts ciphertext $$c$$ using key $$k$$ and outputs text $$m$$.
+- __Encrypt__: $$Enc(m, k) = c$$ - function that encrypts plaintext $$m$$ using key $$k$$ and outputs ciphertext $$c$$.
+- __Decrypt__: $$Dec(c, k) = m$$ - function that decrypts ciphertext $$c$$ using key $$k$$ and outputs plaintext $$m$$.
 
 ## ECB (electronic cookbook) mode
 
@@ -19,14 +19,14 @@ The most obvious cipher mode is an ECB mode that performs encryption for every b
 
 $$c_i = Enc(m_i, k)$$
 
-This mode is considered to be the worst modes from all. If two parts of input text are equal (that appears really often
+This mode is considered to be the worst modes from all. If two parts of input plaintext are equal (that appears really often
 for real texts) it produces same ciphertext that can be used by hackers to broke our cypher.
 
 ## CBC (cipher block chaining) mode
 
-One of the most popular modes is a CBC mode that performs xor operation for every next block of open text with previous
-ciphertext. This mode lacks the disadvantage of the ECB mode and outputs the different cipher texts even for same open
-texts.
+One of the most popular modes is a CBC mode that performs xor operation for every next block of  plaintext with previous
+ciphertext. This mode lacks the disadvantage of the ECB mode and outputs the different ciphertexts even for same
+plaintexts.
 
 $$c_i = Enc(m_i \oplus c_{i-1}, k)$$
 
@@ -50,8 +50,8 @@ Let's overview several approaches to generate the initialization vector.
 
 ## OFB (output feedback) mode
 
-Using this mode we will not encrypt our text directly. Instead, we will use block cipher to generate the pseudo-random
-bytes stream and combine it with open text by xor operation (as in one-time-pad cipher). Such an approach is also
+Using this mode we will not encrypt our plaintext directly. Instead, we will use block cipher to generate the pseudo-random
+bytes stream and combine it with plaintext by xor operation (as in one-time-pad cipher). Such an approach is also
 referred to stream cipher.
 
 $$k_i = Enc(k_{i-1}, k)$$
@@ -60,12 +60,12 @@ $$c_i = m_i \oplus k_i$$
 
 It's easy to observe that such an approach also requires the initialization vector as in CBC mode. One of the advantages
 of this algorithm is that encryption and decryption methods are the same. Also, it does not require the appending to
-the text to fill all block size - we can use as much as needed.
+the plaintext to fill all block size - we can use as much as needed.
 
 One of the highest vulnerability of this mode is that usage of same initialization vectors cause more security risks
-than in all previous modes. For example for texts $$m, \hat{m}$$ and ciphertexts $$c, \hat{c}$$ generated with same
+than in all previous modes. For example for plaintexts $$m, \hat{m}$$ and ciphertexts $$c, \hat{c}$$ generated with same
 initialization vectors we can calculate $$c \oplus \hat{c} = m \oplus k \oplus \hat{m} \oplus k = m \oplus \hat{m}$$.
-So, with the knowledge of one of the open texts, hacker can easily recover the other text.
+So, with the knowledge of one of the plaintexts, hacker can easily recover the other plaintext.
 
 Also, if one of the $$k_i$$ appears twice, it will cause the whole chain to repeat. This problem is more likely to occur
 after a large number of encryptions (see the collisions section below), so it is obviously necessary to limit the
@@ -85,7 +85,7 @@ messages ber one key as well as maximum size of one message $$2^{64}$$ bit.
 
 ## CBC vs CTR
 
-- __Appending__: CBC requires appending to the text to fill the block, CTR - not.
+- __Appending__: CBC requires appending to the plaintext to fill the block, CTR - not.
 - __Speed__: CTR allows concurrent calculation of ciphertext blocks.
 - __Implementation__: CTR requires only encryption function to implement (decryption is the same).
 - __Reliability__: if information about nonce leaks then hacker will be able to receive more information about message
@@ -95,8 +95,8 @@ messages ber one key as well as maximum size of one message $$2^{64}$$ bit.
 ## Collisions
 
 We've made a lot of focus on the probability that two ciphertexts for same keys appears to be same. In all cases it easy
-to check that such match gives more information to hacker about the open text. But what is the resulting probability of
-such collision? Imagine we've encrypted $$M$$ blocks of text then we can select about $$M(M - 1)/2$$ pairs from them.
+to check that such match gives more information to hacker about the plaintext. But what is the resulting probability of
+such collision? Imagine we've encrypted $$M$$ blocks of plaintext then we can select about $$M(M - 1)/2$$ pairs from them.
 For the block size $$n$$ the probability of two blocks to be equal is $$2^{-n}$$, so the entire probability to receive
 same ciphertexts will be
 $$\frac{M(M-1)}{2^{n+1}}$$. This value reaches one if $$M \simeq 2^{n/2}$$. So, for the 128-bit cipher, we will receive
