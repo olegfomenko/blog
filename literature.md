@@ -21,6 +21,7 @@ Papers:
 - [FROST: Flexible Round-Optimized Schnorr Threshold Signatures](https://eprint.iacr.org/2020/852.pdf)
 - [Bulletproofs++. Constructions and Examples]({{ site.url }}/assets/download/Bulletproofs++-Construction-and-Examples.pdf)
 - [High-speed high-security signatures]({{ site.url }}/assets/download/High-speed_high-security_signatures.pdf)
+- [Monero RingCT explained]({{ site.url }}/assets/download/RingCT_explained_final.pdf)
 
 Books:
 
