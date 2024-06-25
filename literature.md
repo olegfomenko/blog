@@ -19,6 +19,7 @@ Papers:
 - [Confidential assets](https://blockstream.com/bitcoin17-final41.pdf)
 - [Fast Multiparty Threshold ECDSA with Fast Trustless Setup](https://eprint.iacr.org/2019/114.pdf)
 - [FROST: Flexible Round-Optimized Schnorr Threshold Signatures](https://eprint.iacr.org/2020/852.pdf)
+- [Weighted Schnorr Threshold Signatures]({{ site.url }}/assets/download/wsts.pdf)
 - [Bulletproofs++. Constructions and Examples]({{ site.url }}/assets/download/Bulletproofs++-Construction-and-Examples.pdf)
 - [High-speed high-security signatures]({{ site.url }}/assets/download/High-speed_high-security_signatures.pdf)
 - [Monero RingCT explained]({{ site.url }}/assets/download/RingCT_explained_final.pdf)
