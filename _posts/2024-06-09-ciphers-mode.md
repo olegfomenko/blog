@@ -94,7 +94,7 @@ messages ber one key as well as maximum size of one message $$2^{64}$$ bit.
 
 ## Collisions
 
-We've made a lot of focus on the probability that two ciphertexts for same keys appears to be same. In all cases it easy
+I've made a lot of focus on the probability that two ciphertexts for same keys appears to be same. In all cases it easy
 to check that such match gives more information to hacker about the plaintext. But what is the resulting probability of
 such collision? Imagine we've encrypted $$M$$ blocks of plaintext then we can select about $$M(M - 1)/2$$ pairs from them.
 For the block size $$n$$ the probability of two blocks to be equal is $$2^{-n}$$, so the entire probability to receive

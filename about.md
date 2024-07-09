@@ -9,16 +9,22 @@ development, which I combine while working at [Distributed Lab](https://distribu
 
 Here are some of my biggest projects that I am proud to share:
 
+_Projects_:
+
 * [Rarimo](github.com/rarimo) - core contributor and main architect (Cosmos SDK, ECDSA TSS, Go).
 
 * Bulletproofs++ [Rust](https://github.com/distributed-lab/bp-pp) & [Go](https://github.com/distributed-lab/bulletproofs) -
 implementation of novel range proof protocol in discrete logarithm setting.
 
+* [Solana Program Library](https://github.com/distributed-lab/solana-program-library) - main maintainer of the
+  Distributed Lab Solana program library.
+
+_Papers_:
+
 * [Bulletproofs++. Constructions and Examples]({{ site.url }}/assets/download/Bulletproofs++-Construction-and-Examples.pdf) - document introduces some clarification and
   corrections to Bulletproofs++ original paper.
 
-* [Solana Program Library](https://github.com/distributed-lab/solana-program-library) - main maintainer of the
-  Distributed Lab Solana program library.
+* [Monero RingCT explained]({{ site.url }}/assets/download/RingCT_explained_final.pdf)
 
 If you have any questions or suggestions, please contact me:
 
