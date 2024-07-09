@@ -13,9 +13,7 @@ _Projects_:
 
 * [Rarimo](github.com/rarimo) - core contributor and main architect (Cosmos SDK, ECDSA TSS, Go).
 
-*
-
-Bulletproofs++ [Rust](https://github.com/distributed-lab/bp-pp) & [Go](https://github.com/distributed-lab/bulletproofs) -
+* Bulletproofs++ [Rust](https://github.com/distributed-lab/bp-pp) & [Go](https://github.com/distributed-lab/bulletproofs) -
 implementation of novel range proof protocol in discrete logarithm setting.
 
 * [Solana Program Library](https://github.com/distributed-lab/solana-program-library) - main maintainer of the
