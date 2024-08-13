@@ -28,6 +28,9 @@ _Papers_:
 * [Monero RingCT explained]({{ site.url }}/assets/download/RingCT_explained_final.pdf) - a brief introduction to the
   Monero RingCT protocol with a high-level overview of the cryptographic primitives it relies on.
 
+* [ZK-STARKs explained]({{ site.url }}/assets/download/ZK_STARKs_explained.pdf) - a short and simple explanation of the
+  ZK-STARK protocol principles.
+
 If you have any questions or suggestions, please contact me:
 
 [![Mail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](oleg.fomenko2002@gmail.com)
