@@ -38,7 +38,7 @@ _Papers_:
 to share the symmetrically encrypted amount in a couple with the Pedersen commitment while amounts are proved to be equal.
 
 
-Also, I own a [monorepo](https://github.com/olegfomenko/crypto) which I typically use for learning proposes or to test some crypto framework.
+Also, I own a [monorepo](https://github.com/olegfomenko/crypto) which I typically use for learning purposes or to test some crypto framework.
 
 If you have any questions or suggestions, please contact me:
 
