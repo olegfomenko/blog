@@ -32,7 +32,7 @@ _Papers_:
   ZK-STARK protocol principles.
 
 * [Private coins extension with verifiable encryption]({{ site.url }}/assets/download/Private_coins_extension_with_verifiable_encryption.pdf) - an approach
-to share the symmetrically encrypted amount with the Pedersen commitment while amounts are proved to be equal.
+to share the symmetrically encrypted amount in a couple with the Pedersen commitment while amounts are proved to be equal.
 
 If you have any questions or suggestions, please contact me:
 
