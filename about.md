@@ -19,6 +19,9 @@ implementation of novel range proof protocol in discrete logarithm setting.
 * [Solana Program Library](https://github.com/distributed-lab/solana-program-library) - main maintainer of the
   Distributed Lab Solana program library.
 
+* [Paxos BFT library](https://github.com/distributed-lab/bpcon) - architect and team lead of the BPCon protocol library
+implementation on Rust.
+
 _Papers_:
 
 * [Bulletproofs++. Constructions and Examples]({{ site.url
