@@ -37,6 +37,9 @@ _Papers_:
 * [Private coins extension with verifiable encryption]({{ site.url }}/assets/download/Private_coins_extension_with_verifiable_encryption.pdf) - an approach
 to share the symmetrically encrypted amount in a couple with the Pedersen commitment while amounts are proved to be equal.
 
+
+Also, I own a [monorepo](https://github.com/olegfomenko/crypto) which I typically use for learning proposes or to test some crypto framework.
+
 If you have any questions or suggestions, please contact me:
 
 [![Mail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](oleg.fomenko2002@gmail.com)
