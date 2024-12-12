@@ -25,7 +25,7 @@ Cryptography.
 Here is an [example](https://crypto.stackexchange.com/questions/61302/how-to-solve-this-ecdlp) how to solve discrete
 logarithm problem for such curves.
 
-![ZK-SNARK cheatsheet]({{ site.url }}/assets/img/singular_curves.png)
+![Singular curves example]({{ site.url }}/assets/img/singular_curves.png)
 
 
 
