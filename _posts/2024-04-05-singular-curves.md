@@ -10,12 +10,12 @@ cryptography.
 
 Singular curves is the curves where discriminant is equal to zero, so $$ 4a^3 + 27b^2 = 0 $$
 
-In such cases, this curve can be represented in two forms (after variable replacement):
+In such cases, this curve can be represented in two forms:
 
-1. $$ y^2 = x^3 $$ where using mapping $$ (x, y) \rightarrow \frac{x}{y} $$ it gives an isomorphism to additive group (
+1. $$ y^2 = x^3 $$ (when there is a triple root 0) where using mapping $$ (x, y) \rightarrow \frac{x}{y} $$ it gives an isomorphism to additive group (
    with same order $$p$$) where discrete logarithm is trivial.
 
-2. $$ y^2 = x^2(x + c) $$ where using mapping $$ (x, y) \rightarrow \frac{y + xc}{y - xc} $$ it gives an isomorphism to
+2. $$ y^2 = x^2(x + c) $$ (when there is a double root 0) where using mapping $$ (x, y) \rightarrow \frac{y + xc}{y - xc} $$ it gives an isomorphism to
    multiplicative group (with order $$p^2$$) where discrete logarithm problem is easy to solve for default elliptic key
    sizes.
 
@@ -24,6 +24,8 @@ Cryptography.
 
 Here is an [example](https://crypto.stackexchange.com/questions/61302/how-to-solve-this-ecdlp) how to solve discrete
 logarithm problem for such curves.
+
+![ZK-SNARK cheatsheet]({{ site.url }}/assets/img/singular_curves.png)
 
 
 
