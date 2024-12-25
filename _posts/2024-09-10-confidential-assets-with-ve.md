@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Private coins extension with verifiable encryption
+title: Private coins extension with VE [paper]
 ---
 
 One of the existing problems of non-SNARK confidential assets protocols based on Pedersen commitments is to disability

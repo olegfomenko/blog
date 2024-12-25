@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bulletproof++ paper release 🎉
+title: Bulletproof++ [paper]
 ---
 
 I can celebrate today cause my paper in co-author with Mike Sokolov and Alex Kurbatov has been released. Enjoy by the
