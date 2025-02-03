@@ -34,6 +34,8 @@ _Papers_:
 * [ZK-STARKs explained]({{ site.url }}/assets/download/ZK_STARKs_explained.pdf) - a short and simple explanation of the
   ZK-STARK protocol principles.
 
+* [Introduction into STARKs]({{ site.url }}/assets/download/13-stark.pdf) - same as above but reviewed and in lecture format.
+
 * [Private coins extension with verifiable encryption]({{ site.url }}/assets/download/Private_coins_extension_with_verifiable_encryption.pdf) - an approach
 to share the symmetrically encrypted amount in a couple with the Pedersen commitment while amounts are proved to be equal.
 
