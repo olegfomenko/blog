@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ZK-SNARK cheatsheet
+title: Pinocchio/Groth16 cheatsheet
 ---
 
 Based on [ZKDL Camp](https://zkdl-camp.github.io/)

@@ -3,7 +3,7 @@ layout: page
 title: About author
 ---
 
-Hi there! It's good to see you on my blog! I launched it to share with you some of the thoughts, ideas and experiences
+Hi there! It's good to see you on my blog! I've launched it to share with you some of the thoughts, ideas and experiences
 I've had working as a blockchain developer. My main area of interest as well as passion is cryptography and blockchain
 development, which I combine while working at [Distributed Lab](https://distributedlab.com).
 
