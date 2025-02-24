@@ -39,6 +39,7 @@ _Papers_:
 * [Private coins extension with verifiable encryption]({{ site.url }}/assets/download/Private_coins_extension_with_verifiable_encryption.pdf) - an approach
 to share the symmetrically encrypted amount in a couple with the Pedersen commitment while amounts are proved to be equal.
 
+* [Introduction into the Error-Correcting Codes]({{ site.url }}/assets/download/Error_Correcting_Codes_final.pdf) - article with the definition and the primitives of some classic ECCs.  
 
 Also, I own a [monorepo](https://github.com/olegfomenko/crypto) which I typically use for learning purposes or to test a new crypto framework.
 
