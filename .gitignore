@@ -27,3 +27,5 @@ _site/
 .jekyll-cache/
 :w
 :W
+/.idea/vcs.xml
+/.idea/workspace.xml

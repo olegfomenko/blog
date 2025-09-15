@@ -21,3 +21,4 @@ key: page-papers
 **Bulletproofs++. Constructions and Examples** Oleg Fomenko, _in Distributed Lab GitHub Archive_ <a class="button button--success button--rounded button--sm" href="https://github.com/distributed-lab/papers/blob/main/bulletproofs/Review_paper_on_BP.pdf"><i class="fas fa-download"></i>PDF</a> Implementations: [Rust](https://github.com/distributed-lab/bp-pp) [Go](https://github.com/distributed-lab/bulletproofs)
 
 **Monero RingCT explained**, Oleg Fomenko, [ResearchGate](https://www.researchgate.net/publication/382183461_Monero_RingCT_explained)
+
