@@ -1,0 +1,239 @@
+header:
+  - titles:
+      # @start locale config
+      en      : &EN       Posts
+      en-GB   : *EN
+      en-US   : *EN
+      en-CA   : *EN
+      en-AU   : *EN
+      zh-Hans : &ZH_HANS  归档
+      zh      : *ZH_HANS
+      zh-CN   : *ZH_HANS
+      zh-SG   : *ZH_HANS
+      zh-Hant : &ZH_HANT  歸檔
+      zh-TW   : *ZH_HANT
+      zh-HK   : *ZH_HANT
+      ko      : &KO       아카이브
+      ko-KR   : *KO
+      fr      : &FR       Archives
+      fr-BE   : *FR
+      fr-CA   : *FR
+      fr-CH   : *FR
+      fr-FR   : *FR
+      fr-LU   : *FR
+      tr      : &TR       Arşivdekiler
+      # @end locale config
+    url: /archive.html
+
+  - titles:
+      en      : &EN       Papers
+    url: /papers.html
+ 
+  #- titles:
+  #    en      : &EN       "\"I workout\""
+  #  url: /iworkout.html
+
+  - titles:
+      # @start locale config
+      en      : &EN       About
+      en-GB   : *EN
+      en-US   : *EN
+      en-CA   : *EN
+      en-AU   : *EN
+      zh-Hans : &ZH_HANS  关于
+      zh      : *ZH_HANS
+      zh-CN   : *ZH_HANS
+      zh-SG   : *ZH_HANS
+      zh-Hant : &ZH_HANT  關於
+      zh-TW   : *ZH_HANT
+      zh-HK   : *ZH_HANT
+      ko      : &KO       소개
+      ko-KR   : *KO
+      fr      : &FR       À propos
+      fr-BE   : *FR
+      fr-CA   : *FR
+      fr-CH   : *FR
+      fr-FR   : *FR
+      fr-LU   : *FR
+      tr      : &TR       Hakkında
+      # @end locale config
+    url: /about.html
+
+# NOTE: For some reason, only depth-1 nesting works here.
+# I tried using subfolderitems and subsubfolderitems with 'page' rather than 'title' but no luck
+cryptomat:
+  - title: Basic math
+    children:
+      - title: Number theory
+        url: /2021/04/15/basic-number-theory.html
+      #- title: Chinese remainder theorem (CRT)
+      #  url: /chinese-remainder-theorem
+      - title: Linear algebra
+        url: /linear-algebra
+      - title: Linear Diophantine equations
+        url: /2020/11/23/Linear-Diophantine-Equations.html
+
+  - title: Group theory
+    children:
+      #- title: Abelian groups
+      #  url: /abelian-groups
+      - title: Pairings or bilinear maps
+        url: /pairings
+      #- title: Multilinear maps
+      #  url: /multilinear-maps
+      #- title: Elliptic curves
+      #  url: /elliptic-curves
+
+  #- title: Hash functions
+  #  url: /hash-functions
+  #  children:
+  #    - title: Ajtai
+  #      url: /ajtai
+  #    - title: SHA2-256
+  #      url: /sha2-256
+  #    - title: Poseidon
+  #      url: /poseidon
+
+  - title: Assumptions
+    children:
+      - title: Hidden-order group assumptions
+        url: /2020/11/05/cryptographic-assumptions-in-hidden-order-groups.html
+    #  - title: DL, CDH, DDH, SXDH, KEA, q-SDH, q-BSDH, q-PKE
+
+  #- title: Commitments
+  #  children:
+  #    - title: Pedersen
+  #      url: /pedersen
+  #    - title: AFGHO
+  #      url: /afgho
+
+  - title: Digital signatures
+    url: /signatures
+    children:
+      - title: BBS+ signatures
+        url: /bbs-plus-signatures
+      - title: ECDSA signatures
+        url: /ecdsa
+      - title: Pointcheval-Sanders (PS)
+        url: /pointcheval-sanders
+      - title: Schnorr signatures
+        url: /schnorr
+      - title: Threshold BLS
+        url: /threshold-bls
+      #- title: RSA
+      #  url: /rsa
+      #- title: Wendy signatures
+      #  url: /wendy
+      #- title: Guillou-Quisquater (GQ)
+      #  url: /gq
+      #- title: Rabin 
+      #  url: /rabin
+
+  - title: Verifiable randomn functions (VRFs)
+    children:
+      - title: Baird et al.'s unique threshold signature scheme
+        url: /2024/05/01/baird-et-al-unique-threshold-signature-scheme.html
+      - title: SMURFs
+        url: /smurf
+
+  - title: Accumulators
+    children:
+      - title: RSA accumulators
+        url: /rsa-accumulators
+      - title: Bilinear accumulators
+        url: /bilinear-accumulators
+
+  - title: Vector commitments
+    url: /vc
+    children:
+      - title: Merkle trees
+        url: /merkle
+      - title: Feist-Khovratovich (FK) precomputation
+        url: /feist-khovratovich 
+      - title: Catalano-Fiore VCs
+        url: /2020/11/24/Catalano-Fiore-Vector-Commitments.html
+      - title: Hyperproofs
+        url: hyperproofs
+    #  - title: Libert-Yung
+    #  - title: aSVC
+    #  - title: Pointproofs
+    #    url: /drafts/2021-09-10-Pointproofs-Vector-Commitments.html # TODO: finalize and rename
+    #  - title: AMTs
+  
+  - title: Polynomials
+    children:
+      - title: Basics of polynomials
+        url: /polynomials
+      - title: Lagrange interpolation
+        url: /lagrange-interpolation
+      - title: Multilinear extensions
+        url: /mle
+      - title: KZG polynomial commitments
+        url: /kzg
+      - title: Hyrax polynomial commitments
+        url: /hyrax
+      - title: KZH polynomial commitments
+        url: /kzh
+      #- title: PST polynomial commitments
+      #  url: /pst
+      - title: Differentiation tricks
+        url: /2025/01/24/Polynomial-differentiation-tricks.html
+      - title: Univariate sumcheck
+        url: /univariate-sumcheck
+      - title: Multivariate sumcheck
+        url: /sumcheck
+      #- title: FRI
+      #  url: /fri
+      #-title: STIR
+      #  url: /stir
+      #-title: WHIR
+      #  url: /whir
+
+  - title: Secret sharing
+    children:
+      - title: How to reshare a secret
+        url: /2024/04/26/How-to-reshare-a-secret.html
+
+  - title: (Zero knowledge) proofs
+    url: /zkps
+    children:
+      - title: NP relations
+        url: /np-relations 
+      - title: QAPs & R1CS
+        url: /r1cs
+      - title: Groth16
+        url: /groth16
+      - title: Spartan
+        url: /spartan
+      - title: Marlin
+        url: /marlin
+    #  - title: PLONK
+    #    url: /plonk
+      - title: $\Sigma$-protocols
+        url: /sigma
+    #  - title: Simulation
+    #    url: /2020/05/07/zero-knowledge-simulation.html
+
+  #- title: Error-correcting codes
+  #  children:
+  #    - title: Reed-Solomon (RS)
+  #      url: /reed-solomon
+  #    - title: Reed-Muller (RM)
+  #      url: /reed-muller
+
+  #- title: Miscellanea 
+  #  children:
+  #    - title: <some Oblivious transfer>
+  #      url: /<some-oblivious-transfer>
+  #    - title: Garbled circuits
+  #      url: /garbled-circuits
+  #    - title: <some-PIR>
+  #      url: /<some-pir>
+  #    - title: <some-iO>
+  #      url: /<some-io>
+
+  #- title: Prize-winning stuff
+  #  children:
+  #    - title: Bulletproofs IPA for multiexp
+  #      url: /2024/09/02/Bulletproofs-IPA-for-multiexp.html 
+
