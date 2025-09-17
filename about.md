@@ -52,6 +52,7 @@ article_header:
 #    src: /assets/images/me.jpg
 ---
 
+
 - 5 years of blockchain development and research at [Distributed Lab](https://distributedlab.com)
 - Research fields: zkVM, zkEVM, confidential transfers, distributed infrastructure, BFT consensus protocols.
 
