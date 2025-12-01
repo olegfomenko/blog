@@ -1,9 +1,6 @@
 ---
 layout: article
-titles:
-  # @start locale config
-  en      : &EN       Academic papers and articles
-  # @end locale config
+title: Academic papers and articles
 key: page-papers
 ---
 
