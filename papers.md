@@ -2,12 +2,12 @@
 layout: article
 titles:
   # @start locale config
-  en      : &EN       Academic papers
+  en      : &EN       Academic papers and articles
   # @end locale config
 key: page-papers
 ---
 
-# Papers
+## Papers
 
 **Private coins extension with verifiable encryption**, Oleg Fomenko, _in Cryptology ePrint Archive_ <a class="button button--success button--rounded button--sm" href="https://eprint.iacr.org/2025/1194"><i class="fas fa-download"></i>PDF</a>
 
@@ -19,7 +19,7 @@ key: page-papers
 
 **Bulletproofs++. Constructions and Examples**, Oleg Fomenko, Mike Sokolov, _in Distributed Lab GitHub Archive_ <a class="button button--success button--rounded button--sm" href="https://github.com/distributed-lab/papers/blob/main/bulletproofs/Review_paper_on_BP.pdf"><i class="fas fa-download"></i>PDF</a> Implementations: [Rust](https://github.com/distributed-lab/bp-pp) and [Go](https://github.com/distributed-lab/bulletproofs)
 
-# Articles
+## Articles
 
 **Pairings Cheatsheet**, Oleg Fomenko, [ResearchGate](https://www.researchgate.net/publication/398153001_Pairings_Cheatsheet)
 

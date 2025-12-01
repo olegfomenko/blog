@@ -59,7 +59,7 @@ or contributing to, systems that make full use of my math skills. Joining
 the [Distributed Lab](https://distributedlab.com) team at the end of 2020 was a key decision that defined the direction
 of my career.
 
-Now, after 4.5 years of developing non-trivial cryptography protocols and a complicated decentralized backend
+Now, after 5 years of developing non-trivial cryptography protocols and a complicated decentralized backend
 architecture, my main ambition is to continue expanding my expertise in cryptography and sharing my knowledge with
 anyone interested.
 
