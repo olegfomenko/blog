@@ -20,7 +20,7 @@ $$
 \texttt{Adv}_\mathcal{A}^{\textnormal{GOAL-ATK-PROP}} \leq v(\lambda),
 $$
 
-where $v$ is a negligible function, $\lambda$ is a security parameter and \texttt{Adv} denotes advantage of an adversary
+where $v$ is a negligible function, $\lambda$ is a security parameter and $\texttt{Adv}$ denotes advantage of an adversary
 $\mathcal{A}$, or more simple — if $p$ is a probability of a successful attack we put $\texttt{Adv} = |p -
 \frac{1}{2}|$.
 
