@@ -59,7 +59,7 @@ automatically follow from the IND or EUF resistance, which are easier to prove.
 
 - **No-message attack (NMA)** or **key-only attack (KOA)** — an attacker receives only public parameters of the
   cryptosystem.  
-  Examples: *key-recovery attack in the NMA model*, *EUF-NMA*.
+  Examples: *key-recovery attack in the NMA model*, *INT-NMA*, *IND-NMA*.
 
 - **Ciphertext-only attack (COA)**, or **known ciphertext attack (KCA)** — an attacker receives ciphertext of several
   messages encrypted by the same key.  
