@@ -22,7 +22,10 @@ $$
 
 where $v$ is a negligible function, $\lambda$ is a security parameter and $\texttt{Adv}$ denotes advantage of an adversary
 $\mathcal{A}$, or more simple — if $p$ is a probability of a successful attack we put $\texttt{Adv} = |p -
-\frac{1}{2}|$.
+\frac{1}{2}|$. You can think about this as if you select a number (0 or 1), an attacker can always successfully guess it 
+in 50% cases. Following the same logic, an attacker for example can always guess the next bit of plaintext with 
+probability $\frac{1}{2}$. The advantage in turn determines if the attacker can somehow increase his chances to guess it 
+correctly. 
 
 Each GOAL-ATK-PROP basically assumes an existence of some protocol or a “game” played by the honest oracle and the
 attacker. Often, the goal is defined by properties, and properties in turn define an answer or action that the attacker
