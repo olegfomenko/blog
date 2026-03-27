@@ -52,6 +52,8 @@ article_header:
 #    src: /assets/images/me.jpg
 ---
 
+GPG Fingerprint <oleg.fomenko@gmail.com> 518BB386C8ED85AA788D57126F8A71BC7248BDF0 [Dowload](/olegfomenko-pubkey.asc)
+{:.info}
 
 My journey started in 2019 when I applied for my first job at a bank as a Junior Java Developer (the Spring stack).
 After gaining a year of experience, I realized I needed some changes and finally discovered my true passion: building,
