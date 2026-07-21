@@ -1,5 +1,5 @@
 ---
-title: Intro to the security properties (GOAL-ATK-PROP)
+title: Cryptographic protocols security (GOAL-ATK-PROP)
 aside:
   toc: false
 tags:
