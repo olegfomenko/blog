@@ -13,24 +13,24 @@ Let's define the following list of configurations for each attack:
 - **ATK** — a type or a certain attack name;
 - **PROP** — additional property for an attack (if needed).
 
-We say that a cryptosystem is $v(\lambda)$-GOAL-ATK-PROP safe if for any PPT adverseries $\mathcal{A}$ the following
+We say that a cryptosystem is $v(\lambda)$-GOAL-ATK-PROP secure if, for any PPT adversary $\mathcal{A}$, the following
 holds:
 
 $$
 \texttt{Adv}_\mathcal{A}^{\textnormal{GOAL-ATK-PROP}} \leq v(\lambda),
 $$
 
-where $v$ is a negligible function, $\lambda$ is a security parameter and $\texttt{Adv}$ denotes advantage of an adversary
-$\mathcal{A}$, or more simple — if $p$ is a probability of a successful attack we put $\texttt{Adv} = |p -
+where $v$ is a negligible function, $\lambda$ is a security parameter, and $\texttt{Adv}$ denotes the advantage of an adversary
+$\mathcal{A}$. More simply, if $p$ is the probability of a successful attack, we put $\texttt{Adv} = |p -
 \frac{1}{2}|$. You can think about this as if you select a number (0 or 1), an attacker can always successfully guess it 
-in 50% cases. Following the same logic, an attacker for example can always guess the next bit of plaintext with 
-probability $\frac{1}{2}$. The advantage in turn determines if the attacker can somehow increase his chances to guess it 
+in 50% of cases. Following the same logic, an attacker, for example, can always guess the next bit of plaintext with
+probability $\frac{1}{2}$. The advantage, in turn, determines if the attacker can somehow increase their chances of guessing it
 correctly. 
 
-Each GOAL-ATK-PROP basically assumes an existence of some protocol or a “game” played by the honest oracle and the
+Each GOAL-ATK-PROP basically assumes the existence of some protocol or a “game” played by the honest oracle and the
 attacker. Often, the goal is defined by properties, and properties in turn define an answer or action that the attacker
 should give/perform. The attack, in turn, defines which input the attacker receives and which requests from the attacker
-can be executed by the oracle. Thus, in practice, we often specify only property and attack, mostly in the form PROP-ATK.
+can be executed by the oracle. Thus, in practice, we often specify only the property and attack, mostly in the form PROP-ATK.
 
 ## Properties
 
@@ -41,7 +41,7 @@ Here are some of the most commonly used properties for ciphers and digital signa
   whether it corresponds to $m_0$ or $m_1$.
 
 - **Semantic Security (SEM)** — an attacker aims to extract any useful information from the ciphertext. It is basically
-  equivalent to the IND, but less convenient for proving.
+  equivalent to IND, but less convenient for proving.
 
 - **Pseudorandomness (PR)** — an attacker aims to distinguish a ciphertext from a random string. It also assumes a
   “game” where an attacker receives a string (or several strings) and should guess whether it is random or not.
@@ -53,7 +53,7 @@ Here are some of the most commonly used properties for ciphers and digital signa
 - **Strong Unforgeability (SUF)** — a stronger version of EUF. An attacker aims to either create a valid signature for
   any new message or create a new valid signature for any old message.
 
-There are also some other properties, like key recovery or message recovery, which are less used because they
+There are also some other properties, like key recovery or message recovery, which are used less because they
 automatically follow from the IND or EUF resistance, which are easier to prove.
 
 ## Attacks
@@ -64,28 +64,28 @@ automatically follow from the IND or EUF resistance, which are easier to prove.
   cryptosystem.  
   Examples: *key-recovery attack in the NMA model*, *INT-NMA*, *IND-NMA*.
 
-- **Ciphertext-only attack (COA)**, or **known ciphertext attack (KCA)** — an attacker receives ciphertext of several
+- **Ciphertext-only attack (COA)**, or **known-ciphertext attack (KCA)** — an attacker receives the ciphertexts of several
   messages encrypted by the same key.  
   Examples: *IND-COA*, *INT-COA*, *message-* or *key-recovery in the COA model*.
 
 - **Known-plaintext attack (KPA)** — an attacker has access to one or many plaintexts and their ciphertexts encrypted by
   the same key.  
-  Examples: *IND-KPA* (the ciphertext and plaintexts to distinguish with overhearing probability will differ from the
+  Examples: *IND-KPA* (the ciphertext and plaintexts to distinguish with overwhelming probability will differ from the
   known ones).
 
 - **Plaintext-checking attack (PCA)** — an attacker can sample a pair of entries from the ciphertext and plaintext
-  spaces accordingly, and ask an oracle if the ciphertext is a valid encryption of the submitted plaintext (always
-  assuming the usage of the same secret key).  
-  Examples: *IND-PCA* (but can not ask for the messages and the received ciphertext to distinguish).
+  spaces, respectively, and ask an oracle if the ciphertext is a valid encryption of the submitted plaintext (always
+  assuming the use of the same secret key).
+  Examples: *IND-PCA* (but cannot ask about the messages and the received ciphertext to distinguish).
 
 - **Chosen-plaintext attack (CPA)** — an attacker has access to one or many plaintexts and their ciphertexts encrypted
   by the same key, and also can ask an oracle to give the ciphertexts for the selected set of plaintexts.  
-  In the adaptive version (Adaptive CPA), an attacker can ask several times until it gives the final answer for the
+  In the adaptive version (Adaptive CPA), an attacker can ask several times until they give the final answer for the
   game, aiming to receive more information from each response. In most cases, CPA assumes the adaptive CPA.  
   Examples: *IND-CPA* (or *CPA1* for non-adaptive CPA and *CPA2* for the adaptive CPA), *INT-CPA*.
 
 - **Chosen-ciphertext attack (CCA)** — an attacker can ask an oracle to decrypt a set of selected ciphertexts.  
-  In the adaptive version (Adaptive CCA), an attacker can ask several times until it gives the final answer for the
+  In the adaptive version (Adaptive CCA), an attacker can ask several times until they give the final answer for the
   game, aiming to receive more information from each response. In most cases, CCA assumes the adaptive CCA.  
   Examples: *IND-CCA* (or *CCA1* for non-adaptive CCA and *CCA2* for the adaptive CCA).
 
@@ -107,12 +107,12 @@ it is automatically IND-PCA secure and so on.
 
 - **Known-message attack (KMA)** — an attacker has access to one or many messages and their signatures by the same
   key.  
-  Examples: *EUF-KPA*.
+  Examples: *EUF-KMA*.
 
 - **Chosen-message attack (CMA)** — an attacker has access to one or many messages and their signatures by the same key,
   and also can ask an oracle to give the signature for the selected set of messages.  
-  In the adaptive version (Adaptive CMA), an attacker can ask several times until it gives the final answer for the
+  In the adaptive version (Adaptive CMA), an attacker can ask several times until they give the final answer for the
   game, aiming to receive more information from each response. In most cases, CMA assumes the adaptive CMA.  
   Examples: *EUF-CMA*, *SUF-CMA*.
 
-The minimal requirement for all modern digital signatures is EUF-CMA, but the desired is always the SUF-CMA resistance.
+The minimum requirement for all modern digital signatures is EUF-CMA, but the desired property is always SUF-CMA resistance.
